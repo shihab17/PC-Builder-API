@@ -5,7 +5,7 @@ const router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
-router.use('/user', require('./users'));
-router.use('/auth', require('./auth'));
+router.use('/user', require('./userRouter'));
+router.use('/auth', require('./authRouter'));
 
 module.exports = router;
