@@ -1,4 +1,4 @@
-const uploadFile = require('./../middleware/file');
+const uploadFile = require('../../middleware/file');
 const upload = async (req, res) => {
     try {
         await uploadFile(req, res);

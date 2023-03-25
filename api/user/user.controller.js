@@ -1,7 +1,7 @@
 const Joi = require("joi");
-const { logger } = require("../lib/logger");
-const userServices = require("../services/userServices");
-const UTILS = require('../lib/utils');
+const { logger } = require("../../lib/logger");
+const userServices = require("./user.service.");
+const UTILS = require('../../lib/utils');
 const create = async (req, res) => {
     try {
         const schema = Joi.object({

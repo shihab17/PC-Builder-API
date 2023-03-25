@@ -1,7 +1,7 @@
 const express = require('express');
-const isAuthenticated = require('../middleware/authorization');
+const isAuthenticated = require('../../middleware/authorization');
 const router = express.Router();
-const userController = require('./../controllers/userController');
+const userController = require('./user.controller');
 router.get('/', isAuthenticated, userController.get);
 router.post('/', isAuthenticated, userController.create);
 router.delete('/:id', isAuthenticated, userController.remove);

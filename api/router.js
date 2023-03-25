@@ -5,8 +5,8 @@ const router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
-router.use('/user', require('./userRouter'));
-router.use('/auth', require('./authRouter'));
-router.use('/file', require('./fileRouter'));
+router.use('/user', require('./user/user.route'));
+router.use('/auth', require('./user/auth.route'));
+router.use('/file', require('./file/file.route'));
 
 module.exports = router;

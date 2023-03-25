@@ -1,4 +1,4 @@
-const upload = require("../services/fileService");
+const upload = require("./file.service");
 
 const create = async (req, res, next) => {
     try {

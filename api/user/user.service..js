@@ -1,8 +1,8 @@
-const { User, Token } = require('./../models/index');
+const { User, Token } = require('../../models/index');
 const bcrypt = require("bcrypt");
 const jwt = require('jsonwebtoken');
-const UTILS = require('./../lib/utils');
-const mailer = require('./../lib/mailer');
+const UTILS = require('../../lib/utils');
+const mailer = require('../../lib/mailer');
 const create = async (user) => {
     try {
         user.password = await hashPassword(user.password);

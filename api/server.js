@@ -7,7 +7,7 @@
 var app = require('./app');
 var debug = require('debug')('expressjs-boilerplate:server');
 var http = require('http');
-require('./mongoose').connect();
+require('../mongoose').connect();
 /**
  * Get port from environment and store in Express.
  */
